@@ -144,6 +144,23 @@ return [
             'title' => 'Mari Bekerjasama Membina Solusi Premium',
             'desc' => 'Sama ada anda memerlukan tapak perniagaan tersuai, skrip bot automatik, atau templat reka bentuk khusus, saya boleh membantu anda membinanya.',
         ],
+        'process' => [
+            'label' => 'PROSES',
+            'title' => 'Proses Kerja Digital',
+            'subtitle' => 'Dari idea awal hingga pelancaran, setiap langkah disusun supaya hasil akhir nampak premium, berfungsi, dan sesuai untuk objektif bisnes.',
+            'steps' => [
+                'discover_title' => 'Fahami Objektif',
+                'discover_desc' => 'Kenal pasti matlamat, pelanggan sasaran, aliran kerja, dan hasil yang ingin dicapai sebelum membina sistem.',
+                'design_title' => 'Reka Struktur',
+                'design_desc' => 'Susun pengalaman pengguna, visual, kandungan, dan identiti supaya projek nampak profesional dan mudah digunakan.',
+                'build_title' => 'Bangunkan Sistem',
+                'build_desc' => 'Bina website, automasi, bot, atau produk digital menggunakan struktur kod yang kemas dan mudah dikembangkan.',
+                'launch_title' => 'Lancar & Uji',
+                'launch_desc' => 'Semak prestasi, responsif mobile, pautan, mesej CTA, dan pengalaman pengguna sebelum digunakan secara rasmi.',
+                'improve_title' => 'Tambah Baik',
+                'improve_desc' => 'Pantau hasil, kemas kini kandungan, tingkatkan conversion, dan tambah fungsi apabila bisnes mula berkembang.',
+            ],
+        ],
     ],
     'about_page' => [
         'label' => 'Identiti Pengasas',

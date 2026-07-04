@@ -144,6 +144,23 @@ return [
             'title' => 'Let\'s Collaborate on Premium Solutions',
             'desc' => 'Whether you need a bespoke business site, automated bot scripting, or a customized design template, I can help you architect it.',
         ],
+        'process' => [
+            'label' => 'PROCESS',
+            'title' => 'Digital Work Process',
+            'subtitle' => 'From early idea to launch, every step is structured to create a premium, functional, and business-focused digital result.',
+            'steps' => [
+                'discover_title' => 'Understand Objectives',
+                'discover_desc' => 'Identify the business goals, target users, workflow, and expected outcome before building the system.',
+                'design_title' => 'Design the Structure',
+                'design_desc' => 'Plan the user experience, visuals, content, and brand identity so the project feels professional and easy to use.',
+                'build_title' => 'Build the System',
+                'build_desc' => 'Develop the website, automation, bot, or digital product using clean and scalable code structure.',
+                'launch_title' => 'Launch & Test',
+                'launch_desc' => 'Review performance, mobile responsiveness, links, CTA messages, and user experience before official use.',
+                'improve_title' => 'Optimize Further',
+                'improve_desc' => 'Monitor results, update content, improve conversion, and add new functions as the business grows.',
+            ],
+        ],
     ],
     'about_page' => [
         'label' => 'Founder Identity',

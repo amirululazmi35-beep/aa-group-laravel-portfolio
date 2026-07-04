@@ -3,7 +3,7 @@
 @section('title', __('site.nav.services'))
 
 @section('content')
-<section class="max-w-6xl mx-auto px-6 py-28 space-y-12 reveal-fade">
+<section class="max-w-6xl mx-auto px-6 pt-40 pb-28 space-y-12 reveal-fade">
     <!-- Header Block -->
     <div class="text-center max-w-xl mx-auto space-y-3">
         <span class="section-label font-bold">
@@ -16,8 +16,8 @@
     <!-- Services Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
         <!-- Service 1 (Featured) -->
-        <div class="p-8 flex flex-col justify-between min-h-[340px] bg-surface/80 group border relative luxury-card border-gold-primary shadow-[0_0_30px_rgba(200,169,106,0.04)] luxury-card-hover reveal-blur" data-delay="100">
-            <span class="absolute top-4 right-4 text-[8px] uppercase tracking-widest bg-gold-primary text-black px-2 py-0.5 font-bold font-sans luxury-shine">
+        <div class="p-8 flex flex-col justify-between h-full min-h-[350px] bg-surface/80 group border relative luxury-card border-gold-primary shadow-[0_0_30px_rgba(200,169,106,0.04)] luxury-card-hover reveal-blur" data-delay="100">
+            <span class="absolute top-0 right-6 -translate-y-1/2 text-[8px] uppercase tracking-widest bg-gold-primary text-black px-2.5 py-0.5 font-bold font-sans luxury-shine whitespace-nowrap border border-gold-primary/20 shadow-sm">
                 {{ __('site.services_page.featured') }}
             </span>
             <div>
@@ -47,7 +47,7 @@
         </div>
 
         <!-- Service 2 -->
-        <div class="p-8 flex flex-col justify-between min-h-[340px] bg-surface/80 group border relative luxury-card border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card-hover reveal-blur" data-delay="200">
+        <div class="p-8 flex flex-col justify-between h-full min-h-[350px] bg-surface/80 group border relative luxury-card border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card-hover reveal-blur" data-delay="200">
             <div>
                 <!-- Icon -->
                 <div class="w-12 h-12 flex items-center justify-center bg-luxury-bg border border-surface-soft text-text-secondary group-hover:text-gold-primary group-hover:border-gold-primary/30 transition-all duration-300 mb-6">
@@ -75,7 +75,7 @@
         </div>
 
         <!-- Service 3 -->
-        <div class="p-8 flex flex-col justify-between min-h-[340px] bg-surface/80 group border relative luxury-card border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card-hover reveal-blur" data-delay="300">
+        <div class="p-8 flex flex-col justify-between h-full min-h-[350px] bg-surface/80 group border relative luxury-card border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card-hover reveal-blur" data-delay="300">
             <div>
                 <!-- Icon -->
                 <div class="w-12 h-12 flex items-center justify-center bg-luxury-bg border border-surface-soft text-text-secondary group-hover:text-gold-primary group-hover:border-gold-primary/30 transition-all duration-300 mb-6">
@@ -103,8 +103,8 @@
         </div>
 
         <!-- Service 4 (Featured) -->
-        <div class="p-8 flex flex-col justify-between min-h-[340px] bg-surface/80 group border relative luxury-card border-gold-primary shadow-[0_0_30px_rgba(200,169,106,0.04)] luxury-card-blue reveal-blur" data-delay="400">
-            <span class="absolute top-4 right-4 text-[8px] uppercase tracking-widest bg-gold-primary text-black px-2 py-0.5 font-bold font-sans luxury-shine">
+        <div class="p-8 flex flex-col justify-between h-full min-h-[350px] bg-surface/80 group border relative luxury-card border-gold-primary shadow-[0_0_30px_rgba(200,169,106,0.04)] luxury-card-blue reveal-blur" data-delay="400">
+            <span class="absolute top-0 right-6 -translate-y-1/2 text-[8px] uppercase tracking-widest bg-gold-primary text-black px-2.5 py-0.5 font-bold font-sans luxury-shine whitespace-nowrap border border-gold-primary/20 shadow-sm">
                 {{ __('site.services_page.featured') }}
             </span>
             <div>
@@ -134,8 +134,8 @@
         </div>
 
         <!-- Service 5 (Featured) -->
-        <div class="p-8 flex flex-col justify-between min-h-[340px] bg-surface/80 group border relative luxury-card border-gold-primary shadow-[0_0_30px_rgba(200,169,106,0.04)] luxury-card-blue reveal-blur" data-delay="500">
-            <span class="absolute top-4 right-4 text-[8px] uppercase tracking-widest bg-gold-primary text-black px-2 py-0.5 font-bold font-sans luxury-shine">
+        <div class="p-8 flex flex-col justify-between h-full min-h-[350px] bg-surface/80 group border relative luxury-card border-gold-primary shadow-[0_0_30px_rgba(200,169,106,0.04)] luxury-card-blue reveal-blur" data-delay="500">
+            <span class="absolute top-0 right-6 -translate-y-1/2 text-[8px] uppercase tracking-widest bg-gold-primary text-black px-2.5 py-0.5 font-bold font-sans luxury-shine whitespace-nowrap border border-gold-primary/20 shadow-sm">
                 {{ __('site.services_page.featured') }}
             </span>
             <div>
@@ -165,7 +165,7 @@
         </div>
 
         <!-- Service 6 -->
-        <div class="p-8 flex flex-col justify-between min-h-[340px] bg-surface/80 group border relative luxury-card border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card-hover reveal-blur" data-delay="600">
+        <div class="p-8 flex flex-col justify-between h-full min-h-[350px] bg-surface/80 group border relative luxury-card border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card-hover reveal-blur" data-delay="600">
             <div>
                 <!-- Icon -->
                 <div class="w-12 h-12 flex items-center justify-center bg-luxury-bg border border-surface-soft text-text-secondary group-hover:text-gold-primary group-hover:border-gold-primary/30 transition-all duration-300 mb-6">
