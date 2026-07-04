@@ -709,22 +709,22 @@ body.page-loaded .hero-slide-in-right {
     overflow: hidden;
     pointer-events: none;
     background:
-        radial-gradient(circle at 18% 18%, rgba(212, 175, 55, 0.075), transparent 30%),
+        radial-gradient(circle at 18% 18%, rgba(212, 175, 55, 0.09), transparent 32%),
         radial-gradient(circle at 86% 70%, rgba(0, 174, 255, 0.045), transparent 26%),
-        radial-gradient(circle at 52% 46%, rgba(255, 255, 255, 0.035), transparent 18%),
-        linear-gradient(135deg, #020202 0%, #0b0b0d 42%, #030303 100%);
+        radial-gradient(circle at 52% 46%, rgba(255, 255, 255, 0.055), transparent 20%),
+        linear-gradient(135deg, #010101 0%, #08080a 42%, #010101 100%);
 }
 
 .aa-geometric-bg::before {
     content: "";
     position: absolute;
     inset: -18%;
-    opacity: 0.32;
+    opacity: 0.35;
     background-image:
-        linear-gradient(45deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-        linear-gradient(-45deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
-        linear-gradient(45deg, rgba(0, 0, 0, 0.75) 25%, transparent 25%),
-        linear-gradient(-45deg, rgba(255, 255, 255, 0.025) 25%, transparent 25%);
+        linear-gradient(45deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(-45deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(45deg, rgba(0, 0, 0, 0.78) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255, 255, 255, 0.035) 25%, transparent 25%);
     background-size:
         72px 72px,
         72px 72px,
@@ -736,27 +736,27 @@ body.page-loaded .hero-slide-in-right {
         0 0,
         48px 48px;
     filter:
-        drop-shadow(0 12px 18px rgba(0, 0, 0, 0.55))
-        drop-shadow(0 -3px 8px rgba(255, 255, 255, 0.018));
-    mask-image: radial-gradient(circle at center, black 0%, black 48%, transparent 82%);
+        drop-shadow(0 12px 18px rgba(0, 0, 0, 0.60))
+        drop-shadow(0 -3px 8px rgba(255, 255, 255, 0.025));
+    mask-image: radial-gradient(circle at center, black 0%, black 60%, transparent 88%);
 }
 
 .aa-geometric-bg::after {
     content: "";
     position: absolute;
     inset: 0;
-    opacity: 0.42;
+    opacity: 0.52;
     background:
-        linear-gradient(135deg, transparent 0 10%, rgba(212, 175, 55, 0.85) 10.15%, rgba(212, 175, 55, 0.85) 10.45%, transparent 10.65%),
-        linear-gradient(135deg, transparent 0 14%, rgba(145, 72, 31, 0.72) 14.15%, rgba(145, 72, 31, 0.72) 14.45%, transparent 14.65%),
-        linear-gradient(-135deg, transparent 0 9%, rgba(212, 175, 55, 0.78) 9.15%, rgba(212, 175, 55, 0.78) 9.45%, transparent 9.65%),
-        linear-gradient(-135deg, transparent 0 18%, rgba(166, 91, 35, 0.68) 18.15%, rgba(166, 91, 35, 0.68) 18.45%, transparent 18.65%),
-        linear-gradient(135deg, transparent 0 84%, rgba(212, 175, 55, 0.72) 84.15%, rgba(212, 175, 55, 0.72) 84.45%, transparent 84.65%),
-        linear-gradient(-135deg, transparent 0 78%, rgba(145, 72, 31, 0.62) 78.15%, rgba(145, 72, 31, 0.62) 78.45%, transparent 78.65%);
+        linear-gradient(135deg, transparent 0 10%, rgba(212, 175, 55, 0.98) 10.15%, rgba(212, 175, 55, 0.98) 10.45%, transparent 10.65%),
+        linear-gradient(135deg, transparent 0 14%, rgba(165, 82, 35, 0.88) 14.15%, rgba(165, 82, 35, 0.88) 14.45%, transparent 14.65%),
+        linear-gradient(-135deg, transparent 0 9%, rgba(212, 175, 55, 0.92) 9.15%, rgba(212, 175, 55, 0.92) 9.45%, transparent 9.65%),
+        linear-gradient(-135deg, transparent 0 18%, rgba(186, 102, 40, 0.82) 18.15%, rgba(186, 102, 40, 0.82) 18.45%, transparent 18.65%),
+        linear-gradient(135deg, transparent 0 84%, rgba(212, 175, 55, 0.86) 84.15%, rgba(212, 175, 55, 0.86) 84.45%, transparent 84.65%),
+        linear-gradient(-135deg, transparent 0 78%, rgba(165, 82, 35, 0.76) 78.15%, rgba(165, 82, 35, 0.76) 78.45%, transparent 78.65%);
     filter:
-        drop-shadow(0 0 10px rgba(212, 175, 55, 0.18))
-        drop-shadow(0 0 22px rgba(212, 175, 55, 0.08));
-    mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+        drop-shadow(0 0 12px rgba(212, 175, 55, 0.24))
+        drop-shadow(0 0 26px rgba(212, 175, 55, 0.12));
+    mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 
 .aa-emboss-pattern {
@@ -764,12 +764,12 @@ body.page-loaded .hero-slide-in-right {
     inset: 0;
     z-index: -45;
     pointer-events: none;
-    opacity: 0.16;
+    opacity: 0.22;
     background-image:
-        linear-gradient(45deg, rgba(255, 255, 255, 0.065) 25%, transparent 25%),
-        linear-gradient(-45deg, rgba(0, 0, 0, 0.72) 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.04) 75%),
-        linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.62) 75%);
+        linear-gradient(45deg, rgba(255, 255, 255, 0.095) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(0, 0, 0, 0.85) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.06) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.75) 75%);
     background-size: 84px 84px;
     background-position:
         0 0,
@@ -777,9 +777,9 @@ body.page-loaded .hero-slide-in-right {
         42px -42px,
         -42px 0;
     filter:
-        drop-shadow(0 10px 14px rgba(0, 0, 0, 0.55))
-        drop-shadow(0 -2px 5px rgba(255, 255, 255, 0.018));
-    mask-image: radial-gradient(circle at center, black 0%, black 44%, transparent 78%);
+        drop-shadow(0 12px 16px rgba(0, 0, 0, 0.65))
+        drop-shadow(0 -2px 5px rgba(255, 255, 255, 0.025));
+    mask-image: radial-gradient(circle at center, black 0%, black 56%, transparent 84%);
 }
 
 .aa-geometric-vignette {
@@ -788,8 +788,8 @@ body.page-loaded .hero-slide-in-right {
     z-index: -40;
     pointer-events: none;
     background:
-        radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.12) 48%, rgba(0, 0, 0, 0.82) 100%),
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent 24%, transparent 72%, rgba(0, 0, 0, 0.58));
+        radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.08) 55%, rgba(0, 0, 0, 0.72) 100%),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.20), transparent 24%, transparent 72%, rgba(0, 0, 0, 0.48));
 }
 
 .aa-geometric-noise {
@@ -797,7 +797,7 @@ body.page-loaded .hero-slide-in-right {
     inset: 0;
     z-index: -35;
     pointer-events: none;
-    opacity: 0.05;
+    opacity: 0.06;
     background-image:
         radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.45) 0 1px, transparent 1px),
         radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.35) 0 1px, transparent 1px),
@@ -831,16 +831,16 @@ body.page-loaded .hero-slide-in-right {
 
 @keyframes aa-line-breathe {
     0% {
-        opacity: 0.28;
+        opacity: 0.38;
         filter:
-            drop-shadow(0 0 8px rgba(212, 175, 55, 0.12))
-            drop-shadow(0 0 16px rgba(212, 175, 55, 0.05));
+            drop-shadow(0 0 10px rgba(212, 175, 55, 0.18))
+            drop-shadow(0 0 20px rgba(212, 175, 55, 0.08));
     }
     100% {
-        opacity: 0.46;
+        opacity: 0.58;
         filter:
-            drop-shadow(0 0 14px rgba(212, 175, 55, 0.22))
-            drop-shadow(0 0 28px rgba(212, 175, 55, 0.09));
+            drop-shadow(0 0 18px rgba(212, 175, 55, 0.30))
+            drop-shadow(0 0 32px rgba(212, 175, 55, 0.15));
     }
 }
 
@@ -863,7 +863,7 @@ body.page-loaded .hero-slide-in-right {
 
 @media (max-width: 768px) {
     .aa-geometric-bg::before {
-        opacity: 0.22;
+        opacity: 0.24;
         background-size:
             56px 56px,
             56px 56px,
@@ -872,11 +872,11 @@ body.page-loaded .hero-slide-in-right {
     }
 
     .aa-geometric-bg::after {
-        opacity: 0.24;
+        opacity: 0.30;
     }
 
     .aa-emboss-pattern {
-        opacity: 0.1;
+        opacity: 0.12;
         background-size: 64px 64px;
     }
 }
