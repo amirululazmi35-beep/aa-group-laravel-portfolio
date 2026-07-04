@@ -1,6 +1,6 @@
 @extends('layouts.portfolio')
 
-@section('title', 'Founder & AI Integrator')
+@section('title', __('site.home.subheadline'))
 
 @section('content')
 <!-- Hero Section -->
@@ -20,7 +20,7 @@
                 <div class="hero-fade-in" style="transition-delay: 150ms">
                     <span class="inline-flex items-center text-[10px] md:text-xs uppercase tracking-[0.3em] text-gold-primary font-bold bg-gold-primary/5 px-3 py-1 border border-border-gold/30">
                         <svg class="w-3 h-3 mr-1.5 text-gold-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21l8.95-6.262H21V3H3v12.904h6.813z"/></svg>
-                        Founder of AA Group
+                        {{ __('site.home.badge') }}
                     </span>
                 </div>
 
@@ -34,47 +34,47 @@
 
                 <!-- Subheadline -->
                 <h2 class="hero-fade-in text-xs md:text-sm uppercase tracking-[0.25em] text-gold-light font-bold" style="transition-delay: 800ms">
-                    Founder of AA Group &amp; AI Integrator
+                    {!! __('site.home.subheadline') !!}
                 </h2>
 
                 <!-- Description -->
                 <p class="hero-fade-in max-w-xl font-sans text-sm md:text-base text-text-secondary leading-relaxed font-normal" style="transition-delay: 950ms">
-                    Membangunkan ekosistem perniagaan digital melalui reka bentuk premium, pembangunan kod (Laravel &amp; Blade), integrasi automasi bot, dan pengedaran lesen digital di bawah AA Store Premium.
+                    {{ __('site.home.description') }}
                 </p>
 
                 <!-- Service Chips -->
                 <div class="hero-fade-in flex flex-wrap gap-2 pt-2" style="transition-delay: 1100ms">
                     <span class="tag-pill inline-flex items-center text-[9px] tracking-widest uppercase bg-surface border border-surface-soft text-text-primary px-3 py-1 font-semibold">
                         <svg class="w-3 h-3 mr-1.5 text-gold-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>
-                        AI Systems
+                        {{ __('site.home.tags.ai_systems') }}
                     </span>
                     <span class="tag-pill inline-flex items-center text-[9px] tracking-widest uppercase bg-surface border border-surface-soft text-text-primary px-3 py-1 font-semibold">
                         <svg class="w-3 h-3 mr-1.5 text-gold-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
-                        Digital Products
+                        {{ __('site.home.tags.digital_products') }}
                     </span>
                     <span class="tag-pill inline-flex items-center text-[9px] tracking-widest uppercase bg-surface border border-surface-soft text-text-primary px-3 py-1 font-semibold">
                         <svg class="w-3 h-3 mr-1.5 text-gold-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20M12 2a14.5 14.5 0 010 20M2 12h20"/></svg>
-                        Website Development
+                        {{ __('site.home.tags.web_dev') }}
                     </span>
                     <span class="tag-pill inline-flex items-center text-[9px] tracking-widest uppercase bg-surface border border-surface-soft text-text-primary px-3 py-1 font-semibold">
                         <svg class="w-3 h-3 mr-1.5 text-gold-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
-                        Automation Bots
+                        {{ __('site.home.tags.automation_bots') }}
                     </span>
                     <span class="tag-pill inline-flex items-center text-[9px] tracking-widest uppercase bg-surface border border-surface-soft text-text-primary px-3 py-1 font-semibold">
                         <svg class="w-3 h-3 mr-1.5 text-gold-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        AA Store Premium
+                        {{ __('site.home.tags.store_premium') }}
                     </span>
                 </div>
 
                 <!-- CTA Buttons -->
                 <div class="hero-fade-in flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-4 w-full sm:w-auto" style="transition-delay: 1250ms">
                     <a href="https://wa.me/601118715341?text=Hi%20Amir%2C%20saya%20berminat%20dengan%20servis%20AA%20Group." target="_blank" rel="noopener noreferrer" class="btn-sweep-gold group inline-flex items-center justify-center px-6 py-3 text-[10px] font-bold uppercase tracking-widest bg-gold-primary hover:bg-gold-light text-black rounded transition-all duration-300 min-h-[48px]">
-                        Inquire Services
+                        {{ __('site.buttons.inquire_services') }}
                         <svg class="ml-2 w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
                     </a>
                     <a href="#projects" class="w-full sm:w-auto">
                         <button class="btn-sweep-gold w-full group inline-flex items-center justify-center px-6 py-3 text-[10px] font-bold uppercase tracking-widest border border-border-gold/40 hover:border-gold-primary text-text-primary bg-transparent rounded transition-all duration-300 min-h-[48px] cursor-pointer">
-                            View Case Studies
+                            {{ __('site.buttons.view_case_studies') }}
                             <svg class="ml-2 w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
                         </button>
                     </a>
@@ -83,20 +83,20 @@
                 <!-- Info Cards / Stats Blocks -->
                 <div class="hero-fade-in grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-surface-soft/60 w-full" style="transition-delay: 1400ms">
                     <div class="border-l border-border-gold/30 pl-4 py-1">
-                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary">Business Structure</span>
-                        <span class="block text-xs font-serif font-medium text-gold-primary mt-1">Founder-led</span>
+                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary">{{ __('site.home.stats.structure') }}</span>
+                        <span class="block text-xs font-serif font-medium text-gold-primary mt-1">{{ __('site.home.stats.structure_val') }}</span>
                     </div>
                     <div class="border-l border-border-gold/30 pl-4 py-1">
-                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary">E-Commerce</span>
-                        <span class="block text-xs font-serif font-medium text-gold-primary mt-1">Digital Products</span>
+                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary">{{ __('site.home.stats.ecommerce') }}</span>
+                        <span class="block text-xs font-serif font-medium text-gold-primary mt-1">{{ __('site.home.stats.ecommerce_val') }}</span>
                     </div>
                     <div class="border-l border-border-gold/30 pl-4 py-1">
-                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary">Core Operations</span>
-                        <span class="block text-xs font-serif font-medium text-gold-primary mt-1">AI Workflows</span>
+                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary">{{ __('site.home.stats.operations') }}</span>
+                        <span class="block text-xs font-serif font-medium text-gold-primary mt-1">{{ __('site.home.stats.operations_val') }}</span>
                     </div>
                     <div class="border-l border-border-gold/30 pl-4 py-1">
-                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary">Service Pipeline</span>
-                        <span class="block text-xs font-serif font-medium text-gold-primary mt-1">Automation</span>
+                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary">{{ __('site.home.stats.pipeline') }}</span>
+                        <span class="block text-xs font-serif font-medium text-gold-primary mt-1">{{ __('site.home.stats.pipeline_val') }}</span>
                     </div>
                 </div>
             </div>
@@ -122,32 +122,32 @@
                         <!-- Visual Details -->
                         <div class="p-6 md:p-8 space-y-6 font-mono text-xs text-text-secondary leading-relaxed bg-grid-tech">
                             <div class="space-y-2 border-b border-surface-soft/60 pb-4">
-                                <span class="text-gold-primary block font-sans uppercase tracking-[0.2em] text-[9px] font-bold select-none">COGNITIVE PROFILE</span>
+                                <span class="text-gold-primary block font-sans uppercase tracking-[0.2em] text-[9px] font-bold select-none">{{ __('site.home.profile.cognitive') }}</span>
                                 <div class="flex items-center justify-between text-text-primary text-sm font-serif tracking-widest uppercase">
-                                    <span>IDENTITY:</span>
+                                    <span>{{ __('site.home.profile.identity') }}</span>
                                     <span class="text-gold-light font-bold select-all">AMIR</span>
                                 </div>
                                 <div class="flex items-center justify-between text-[11px]">
-                                    <span>FUNCTION:</span>
-                                    <span class="text-blue-accent font-semibold">ECOSYSTEM ARCHITECT</span>
+                                    <span>{{ __('site.home.profile.function') }}</span>
+                                    <span class="text-blue-accent font-semibold">{{ __('site.home.profile.function_val') }}</span>
                                 </div>
                                 <div class="flex items-center justify-between text-[11px]">
-                                    <span>STATUS:</span>
+                                    <span>{{ __('site.home.profile.status') }}</span>
                                     <span class="flex items-center gap-1.5 text-emerald-400 bg-emerald-500/5 px-2 py-0.5 border border-emerald-500/25 text-[9px] font-bold system-label-glow">
                                         <span class="status-pulse-dot"></span>
-                                        ACTIVE SYSTEM
+                                        {{ __('site.home.profile.status_val') }}
                                     </span>
                                 </div>
                             </div>
 
                             <div class="space-y-2">
-                                <span class="text-gold-primary block font-sans uppercase tracking-[0.2em] text-[9px] font-bold select-none">DEPLOYMENT ARCHITECTURE</span>
+                                <span class="text-gold-primary block font-sans uppercase tracking-[0.2em] text-[9px] font-bold select-none">{{ __('site.home.profile.architecture') }}</span>
                                 <div class="bg-luxury-bg border border-surface-soft p-3 font-mono text-[10px] space-y-1.5 text-text-secondary overflow-hidden select-all">
                                     <div><span class="text-blue-accent">&gt;</span> php artisan serve</div>
-                                    <div class="text-emerald-400/80">✔ Production bundle optimized</div>
-                                    <div class="text-emerald-400/80">✔ Database connections online</div>
-                                    <div class="text-emerald-400/80">✔ SSL secure tunnels validated</div>
-                                    <div class="text-text-primary/40"><span class="text-gold-primary">HOST:</span> Local Port Gateway</div>
+                                    <div class="text-emerald-400/80">{{ __('site.home.profile.opt_bundle') }}</div>
+                                    <div class="text-emerald-400/80">{{ __('site.home.profile.db_conn') }}</div>
+                                    <div class="text-emerald-400/80">{{ __('site.home.profile.ssl_secure') }}</div>
+                                    <div class="text-text-primary/40"><span class="text-gold-primary">{{ __('site.home.profile.host') }}</span> {{ __('site.home.profile.host_val') }}</div>
                                     <div><span class="text-blue-accent">&gt;</span> <span class="terminal-cursor"></span></div>
                                 </div>
                             </div>
@@ -158,13 +158,13 @@
                                     <span class="text-text-primary font-semibold">MY/KL</span>
                                 </div>
                                 <div class="flex items-center justify-between text-[10px]">
-                                    <span>REDUNDANCY:</span>
-                                    <span class="text-gold-light font-semibold">24/7 TELEGRAM BOT</span>
+                                    <span>{{ __('site.home.profile.redundancy') }}</span>
+                                    <span class="text-gold-light font-semibold">{{ __('site.home.profile.redundancy_val') }}</span>
                                 </div>
                                 
                                 <!-- Founder Signature detail area -->
                                 <div class="border-t border-surface-soft/60 pt-4 flex items-center justify-between">
-                                    <span class="text-[8px] uppercase tracking-widest text-text-secondary/50 font-sans font-bold">FOUNDER SIGNATURE:</span>
+                                    <span class="text-[8px] uppercase tracking-widest text-text-secondary/50 font-sans font-bold">{{ __('site.home.profile.signature') }}</span>
                                     <span class="founder-signature text-sm font-serif select-none">Amir</span>
                                 </div>
                             </div>
@@ -184,12 +184,12 @@
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 space-y-12">
         <!-- Section Heading -->
         <div class="text-left space-y-3">
-            <span class="section-label">THE FOUNDER</span>
+            <span class="section-label">{{ __('site.home.about.label') }}</span>
             <h2 class="font-serif text-3xl md:text-4xl font-light text-text-primary uppercase tracking-wider">
-                Amir | Strategic Visionary
+                {{ __('site.home.about.title') }}
             </h2>
             <p class="text-text-secondary text-xs md:text-sm font-sans max-w-xl">
-                Pioneering new systems at the intersection of design, frontend code, and artificial intelligence.
+                {{ __('site.home.about.subtitle') }}
             </p>
         </div>
 
@@ -200,10 +200,10 @@
                 <div class="p-6 sm:p-8 bg-surface-soft/40 border border-border-gold/15 relative overflow-hidden flex flex-col justify-center luxury-card reveal-left">
                     <span class="absolute top-0 right-0 w-24 h-24 rounded-full bg-gold-primary/5 blur-2xl"></span>
                     <h3 class="font-serif text-xl sm:text-2xl md:text-3xl font-light text-text-primary leading-tight mb-4">
-                        Membina aset digital bermula dari bawah pada umur 20 tahun.
+                        {{ __('site.home.about.statement') }}
                     </h3>
                     <p class="font-sans text-xs sm:text-sm text-text-secondary leading-relaxed font-normal">
-                        Gabungan kepakaran visual reka bentuk UI (Figma) dengan pelaksanaan kod pengaturcaraan membolehkan Amir mengendalikan keseluruhan kitaran hayat produk digital secara autonomi.
+                        {{ __('site.home.about.desc') }}
                     </p>
                 </div>
 
@@ -213,11 +213,11 @@
                         <div class="space-y-2">
                             <div class="flex items-center space-x-2 text-gold-primary">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.907c.961 0 1.36 1.246.6 1.79l-3.97 2.883a1 1 0 00-.364 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.971-2.883a1 1 0 00-1.176 0l-3.97 2.883c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.98 9.72c-.76-.544-.36-1.79.6-1.79h4.907a1 1 0 00.95-.69l1.519-4.674z"/></svg>
-                                <span class="text-[9px] uppercase tracking-widest font-bold font-sans">Syarikat Misi</span>
+                                <span class="text-[9px] uppercase tracking-widest font-bold font-sans">{{ __('site.home.about.mission_label') }}</span>
                             </div>
-                            <h4 class="font-serif text-sm text-text-primary font-medium">Digital Autonomy</h4>
+                            <h4 class="font-serif text-sm text-text-primary font-medium">{{ __('site.home.about.mission_title') }}</h4>
                             <p class="font-sans text-[11px] text-text-secondary leading-relaxed">
-                                Membangunkan AA Group menjadi sebuah ekosistem perniagaan digital yang kukuh, menguntungkan, dan mampu berkembang secara sistematik.
+                                {{ __('site.home.about.mission_desc') }}
                             </p>
                         </div>
                     </div>
@@ -226,11 +226,11 @@
                         <div class="space-y-2">
                             <div class="flex items-center space-x-2 text-blue-accent">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M16.26 16.26l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-                                <span class="text-[9px] uppercase tracking-widest font-bold font-sans">Sistem Nilai</span>
+                                <span class="text-[9px] uppercase tracking-widest font-bold font-sans">{{ __('site.home.about.value_label') }}</span>
                             </div>
-                            <h4 class="font-serif text-sm text-text-primary font-medium">Premium Execution</h4>
+                            <h4 class="font-serif text-sm text-text-primary font-medium">{{ __('site.home.about.value_title') }}</h4>
                             <p class="font-sans text-[11px] text-text-secondary leading-relaxed">
-                                Mengutamakan kualiti visual mewah (luxury theme), struktur kod modular, integrasi API automasi pintar, serta kepuasan pengguna maksima.
+                                {{ __('site.home.about.value_desc') }}
                             </p>
                         </div>
                     </div>
@@ -240,19 +240,19 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-surface-soft">
                     <div>
                         <span class="block text-2xl md:text-3xl font-serif text-gold-primary font-medium" data-count-target="20">0</span>
-                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary mt-1">Age</span>
+                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary mt-1">{{ __('site.home.about.stat_age') }}</span>
                     </div>
                     <div>
                         <span class="block text-2xl md:text-3xl font-serif text-gold-primary font-medium" data-count-target="6">0</span>
-                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary mt-1">Core Expertise</span>
+                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary mt-1">{{ __('site.home.about.stat_exp') }}</span>
                     </div>
                     <div>
                         <span class="block text-2xl md:text-3xl font-serif text-gold-primary font-medium" data-count-target="100%">0%</span>
-                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary mt-1">Autonomy</span>
+                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary mt-1">{{ __('site.home.about.stat_auto') }}</span>
                     </div>
                     <div>
                         <span class="block text-2xl md:text-3xl font-serif text-gold-primary font-medium">LIVE</span>
-                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary mt-1">Ecosystem Status</span>
+                        <span class="block text-[8px] uppercase tracking-widest text-text-secondary mt-1">{{ __('site.home.about.stat_status') }}</span>
                     </div>
                 </div>
             </div>
@@ -273,17 +273,17 @@
                                 
                                 <div class="border border-border-gold/15 w-full h-full flex flex-col items-center justify-center p-4 relative z-10">
                                     <span class="font-serif text-3xl tracking-[0.2em] text-gold-primary mb-2 select-none">AMIR</span>
-                                    <span class="text-[8px] uppercase tracking-[0.25em] text-text-secondary font-bold">FOUNDER PROFILE</span>
+                                    <span class="text-[8px] uppercase tracking-[0.25em] text-text-secondary font-bold">{{ __('site.home.about.profile_label') }}</span>
                                     <div class="w-8 h-[1px] bg-gold-primary/30 my-4"></div>
                                     <p class="text-[10px] text-text-secondary/60 leading-relaxed max-w-[180px]">
-                                        AA Group Holding Digital System Ecosystem
+                                        {{ __('site.home.about.profile_sub') }}
                                     </p>
                                 </div>
                             </div>
                             <!-- Title Plate Overlay at the bottom -->
                             <div class="absolute bottom-4 left-4 right-4 bg-luxury-bg/90 backdrop-blur-sm border border-border-gold/30 p-4 text-center">
                                 <span class="block font-serif text-lg tracking-widest text-text-primary uppercase">AMIR</span>
-                                <span class="block text-[9px] uppercase tracking-[0.2em] text-gold-primary mt-1">FOUNDER OF AA GROUP</span>
+                                <span class="block text-[9px] uppercase tracking-[0.2em] text-gold-primary mt-1">{{ __('site.home.badge') }}</span>
                             </div>
                         </div>
                     </div>
@@ -299,28 +299,28 @@
 <section id="aagroup" class="bg-surface/30 py-20 reveal-fade bg-grid-ambient">
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 space-y-12">
         <div class="text-left space-y-3">
-            <span class="section-label">THE CORPORATE IDENTITY</span>
+            <span class="section-label">{{ __('site.home.ecosystem.label') }}</span>
             <h2 class="font-serif text-3xl md:text-4xl font-light text-text-primary uppercase tracking-wider">
-                AA Group Digital Ecosystem
+                {{ __('site.home.ecosystem.title') }}
             </h2>
             <p class="text-text-secondary text-xs md:text-sm font-sans max-w-xl">
-                Developing a unified digital network that connects premium e-commerce, custom developer tools, and automated system channels.
+                {{ __('site.home.ecosystem.desc') }}
             </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <!-- Left Column: Vision Statement -->
             <div class="lg:col-span-4 space-y-6 lg:sticky lg:top-28 reveal-left">
-                <span class="text-[10px] uppercase tracking-[0.25em] text-blue-accent font-bold">// THE ECOSYSTEM PLAN</span>
+                <span class="text-[10px] uppercase tracking-[0.25em] text-blue-accent font-bold">{{ __('site.home.ecosystem.plan_title') }}</span>
                 <h3 class="font-serif text-3xl font-light text-text-primary leading-tight">
-                    Connecting retail products with custom services under a unified brand.
+                    {{ __('site.home.ecosystem.plan_headline') }}
                 </h3>
                 <p class="font-sans text-sm text-text-secondary leading-relaxed font-normal">
-                    AA Group ialah ekosistem perniagaan digital bersepadu. Kami menggabungkan saluran jualan runcit produk (AA Store Premium) dengan penawaran khidmat pembangunan sistem berteknologi tinggi untuk membolehkan perniagaan beroperasi secara optimum.
+                    {{ __('site.home.ecosystem.plan_desc') }}
                 </p>
                 <div class="h-[1px] bg-border-blue/35 w-full pt-2"></div>
                 <div class="flex items-center space-x-2 text-blue-accent text-xs uppercase tracking-widest font-semibold">
-                    <span>Ecosystem Alpha version 1.2</span>
+                    <span>{{ __('site.home.ecosystem.ver') }}</span>
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </div>
             </div>
@@ -330,64 +330,64 @@
                 <!-- Branch 1 -->
                 <div class="p-6 flex flex-col justify-between aspect-[4/3] bg-surface/50 border border-surface-soft hover:border-blue-accent/30 hover:shadow-[0_0_30px_rgba(47,128,237,0.08)] transition-all duration-500 group luxury-card reveal-up" data-delay="100">
                     <div class="flex justify-between items-start mb-4">
-                        <span class="block text-[9px] uppercase tracking-widest text-text-secondary font-bold font-sans">01 / RETAIL</span>
+                        <span class="block text-[9px] uppercase tracking-widest text-text-secondary font-bold font-sans">{{ __('site.home.ecosystem.branches.retail') }}</span>
                         <div class="w-8 h-8 flex items-center justify-center bg-luxury-bg border border-surface-soft text-text-secondary group-hover:text-blue-accent group-hover:border-blue-accent/30 transition-all duration-300">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
                         </div>
                     </div>
                     <h4 class="font-serif text-xl font-light text-text-primary mb-3 group-hover:text-blue-accent transition-colors duration-300">
-                        AA Store Premium
+                        {{ __('site.home.ecosystem.branches.retail_title') }}
                     </h4>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                        Direct retail channels for premium software licenses, streaming logins, and advanced productivity keys.
+                        {{ __('site.home.ecosystem.branches.retail_desc') }}
                     </p>
                 </div>
 
                 <!-- Branch 2 -->
                 <div class="p-6 flex flex-col justify-between aspect-[4/3] bg-surface/50 border border-surface-soft hover:border-blue-accent/30 hover:shadow-[0_0_30px_rgba(47,128,237,0.08)] transition-all duration-500 group luxury-card reveal-up" data-delay="200">
                     <div class="flex justify-between items-start mb-4">
-                        <span class="block text-[9px] uppercase tracking-widest text-text-secondary font-bold font-sans">02 / SOLUTIONS</span>
+                        <span class="block text-[9px] uppercase tracking-widest text-text-secondary font-bold font-sans">{{ __('site.home.ecosystem.branches.solutions') }}</span>
                         <div class="w-8 h-8 flex items-center justify-center bg-luxury-bg border border-surface-soft text-text-secondary group-hover:text-blue-accent group-hover:border-blue-accent/30 transition-all duration-300">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20M12 2a14.5 14.5 0 010 20M2 12h20"/></svg>
                         </div>
                     </div>
                     <h4 class="font-serif text-xl font-light text-text-primary mb-3 group-hover:text-blue-accent transition-colors duration-300">
-                        Website Development
+                        {{ __('site.home.ecosystem.branches.solutions_title') }}
                     </h4>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                        Fast-loading custom frontend development tailored for businesses looking to expand their corporate footprint.
+                        {{ __('site.home.ecosystem.branches.solutions_desc') }}
                     </p>
                 </div>
 
                 <!-- Branch 3 -->
                 <div class="p-6 flex flex-col justify-between aspect-[4/3] bg-surface/50 border border-surface-soft hover:border-blue-accent/30 hover:shadow-[0_0_30px_rgba(47,128,237,0.08)] transition-all duration-500 group luxury-card reveal-up" data-delay="300">
                     <div class="flex justify-between items-start mb-4">
-                        <span class="block text-[9px] uppercase tracking-widest text-text-secondary font-bold font-sans">03 / CREATIVE</span>
+                        <span class="block text-[9px] uppercase tracking-widest text-text-secondary font-bold font-sans">{{ __('site.home.ecosystem.branches.creative') }}</span>
                         <div class="w-8 h-8 flex items-center justify-center bg-luxury-bg border border-surface-soft text-text-secondary group-hover:text-blue-accent group-hover:border-blue-accent/30 transition-all duration-300">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122A3 3 0 0010.5 21c.966 0 1.838-.46 2.39-1.173m-3.36-3.705A3.978 3.978 0 019 15c0-1.892 1.33-3.474 3.125-3.875M12 3a9 9 0 100 18 9 9 0 000-18z"/></svg>
                         </div>
                     </div>
                     <h4 class="font-serif text-xl font-light text-text-primary mb-3 group-hover:text-blue-accent transition-colors duration-300">
-                        Design &amp; Branding
+                        {!! __('site.home.ecosystem.branches.creative_title') !!}
                     </h4>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                        Premium typography guidelines, vector assets, and bespoke UX designs that establish visual gravity.
+                        {{ __('site.home.ecosystem.branches.creative_desc') }}
                     </p>
                 </div>
 
                 <!-- Branch 4 -->
                 <div class="p-6 flex flex-col justify-between aspect-[4/3] bg-surface/50 border border-surface-soft hover:border-blue-accent/30 hover:shadow-[0_0_30px_rgba(47,128,237,0.08)] transition-all duration-500 group luxury-card reveal-up" data-delay="400">
                     <div class="flex justify-between items-start mb-4">
-                        <span class="block text-[9px] uppercase tracking-widest text-text-secondary font-bold font-sans">04 / INTELLIGENCE</span>
+                        <span class="block text-[9px] uppercase tracking-widest text-text-secondary font-bold font-sans">{{ __('site.home.ecosystem.branches.intelligence') }}</span>
                         <div class="w-8 h-8 flex items-center justify-center bg-luxury-bg border border-surface-soft text-text-secondary group-hover:text-blue-accent group-hover:border-blue-accent/30 transition-all duration-300">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.813 15.904L9 21l8.95-6.262H21V3H3v12.904h6.813z"/></svg>
                         </div>
                     </div>
                     <h4 class="font-serif text-xl font-light text-text-primary mb-3 group-hover:text-blue-accent transition-colors duration-300">
-                        AI Solutions
+                        {{ __('site.home.ecosystem.branches.intelligence_title') }}
                     </h4>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                        API integrations, customized language model prompts, and automation agents that increase administrative efficiency.
+                        {{ __('site.home.ecosystem.branches.intelligence_desc') }}
                     </p>
                 </div>
             </div>
@@ -401,9 +401,9 @@
 <section id="skills" class="bg-grid-ambient py-20 reveal-fade">
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 space-y-12">
         <div class="text-center max-w-xl mx-auto space-y-3">
-            <span class="section-label">EXPERTISE</span>
-            <h2 class="font-serif text-3xl font-light text-text-primary uppercase tracking-wider">Capabilities &amp; Skills</h2>
-            <p class="text-text-secondary text-xs md:text-sm">A comprehensive toolkit built to design, build, automate, and monetize online products.</p>
+            <span class="section-label">{{ __('site.home.skills.label') }}</span>
+            <h2 class="font-serif text-3xl font-light text-text-primary uppercase tracking-wider">{{ __('site.home.skills.title') }}</h2>
+            <p class="text-text-secondary text-xs md:text-sm">{{ __('site.home.skills.subtitle') }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -416,9 +416,9 @@
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         </div>
                     </div>
-                    <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300">UX &amp; UI Design</h3>
+                    <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300">{!! __('site.home.skills.items.design_title') !!}</h3>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal mb-6">
-                        Merekabentuk visual korporat yang mewah, wireframe modular, flow pengguna intuitif, serta susun atur grid yang seimbang menggunakan Figma.
+                        {{ __('site.home.skills.items.design_desc') }}
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -437,9 +437,9 @@
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                         </div>
                     </div>
-                    <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300">Full-Stack Development</h3>
+                    <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300">{!! __('site.home.skills.items.dev_title') !!}</h3>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal mb-6">
-                        Membina aplikasi web yang pantas dan responsif menggunakan framework Laravel, Blade template logic, Tailwind CSS, dan bundler modern Vite.
+                        {{ __('site.home.skills.items.dev_desc') }}
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -458,9 +458,9 @@
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
                         </div>
                     </div>
-                    <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300">System Automation</h3>
+                    <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300">{!! __('site.home.skills.items.auto_title') !!}</h3>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal mb-6">
-                        Mengintegrasikan bot Telegram dengan API, automasi pemprosesan checkout bayaran webhooks, dan prompt engineering untuk sistem AI pintar.
+                        {{ __('site.home.skills.items.auto_desc') }}
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -478,14 +478,14 @@
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 space-y-12">
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div class="space-y-3">
-                <span class="section-label">CASE STUDIES</span>
-                <h3 class="font-serif text-3xl md:text-4xl font-light text-text-primary uppercase tracking-wider">Featured Projects</h3>
+                <span class="section-label">{{ __('site.home.projects.label') }}</span>
+                <h3 class="font-serif text-3xl md:text-4xl font-light text-text-primary uppercase tracking-wider">{{ __('site.home.projects.title') }}</h3>
                 <p class="text-text-secondary text-xs md:text-sm max-w-xl">
-                    A showcase of functional solutions, bot structures, design campaigns, and premium e-commerce setups built by Amir.
+                    {{ __('site.home.projects.subtitle') }}
                 </p>
             </div>
             <a href="{{ url('/projects') }}" class="text-[10px] font-bold uppercase tracking-widest text-gold-primary hover:text-gold-light inline-flex items-center gap-1.5 transition-colors">
-                View All Projects &rarr;
+                {!! __('site.buttons.view_all_projects') !!}
             </a>
         </div>
 
@@ -510,7 +510,7 @@
                                 AA
                             </span>
                             <div class="border border-border-gold w-full h-full flex flex-col items-center justify-center p-4 relative z-10">
-                                <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">E-Commerce Product</span>
+                                <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">{{ __('site.home.projects.items.store_label') }}</span>
                                 <span class="font-serif text-sm tracking-wider text-text-primary uppercase max-w-[200px] leading-tight mb-2">AA Store Premium</span>
                                 <div class="w-6 h-[1px] bg-gold-primary/30 my-2"></div>
                                 <span class="text-[7px] uppercase tracking-widest text-text-secondary/50 font-semibold select-none">PROTOTYPE MODULE</span>
@@ -525,12 +525,12 @@
 
                 <div class="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-6">
                     <div class="space-y-3">
-                        <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">Digital Platform</span>
+                        <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">{{ __('site.home.projects.items.store_label') }}</span>
                         <h3 class="font-serif text-2xl font-light text-text-primary group-hover:text-gold-light transition-colors duration-300">
                             AA Store Premium
                         </h3>
                         <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                            Our digital product platform selling premium web applications, developer templates, and customization software.
+                            {{ __('site.home.projects.items.store_desc') }}
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -560,7 +560,7 @@
                                 BM
                             </span>
                             <div class="border border-border-blue w-full h-full flex flex-col items-center justify-center p-4 relative z-10">
-                                <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-blue-accent">Automation systems</span>
+                                <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-blue-accent">{{ __('site.home.projects.items.bot_label') }}</span>
                                 <span class="font-serif text-sm tracking-wider text-text-primary uppercase max-w-[200px] leading-tight mb-2">BLACKMARKET Telegram Bot</span>
                                 <div class="w-6 h-[1px] bg-blue-accent/30 my-2"></div>
                                 <span class="text-[7px] uppercase tracking-widest text-text-secondary/50 font-semibold select-none">PROTOTYPE MODULE</span>
@@ -574,12 +574,12 @@
 
                 <div class="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-6">
                     <div class="space-y-3">
-                        <span class="text-[9px] uppercase tracking-widest font-bold text-blue-accent">AI Bot</span>
+                        <span class="text-[9px] uppercase tracking-widest font-bold text-blue-accent">{{ __('site.home.projects.items.bot_label') }}</span>
                         <h3 class="font-serif text-2xl font-light text-text-primary group-hover:text-gold-light transition-colors duration-300">
                             BLACKMARKET Bot
                         </h3>
                         <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                            Automated messaging and script distributor bot featuring Stripe &amp; Crypto webhook processing.
+                            {{ __('site.home.projects.items.bot_desc') }}
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -609,7 +609,7 @@
                                 DB
                             </span>
                             <div class="border border-border-gold w-full h-full flex flex-col items-center justify-center p-4 relative z-10">
-                                <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">Creative Design</span>
+                                <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">{{ __('site.home.projects.items.design_label') }}</span>
                                 <span class="font-serif text-sm tracking-wider text-text-primary uppercase max-w-[200px] leading-tight mb-2">Design &amp; Branding</span>
                                 <div class="w-6 h-[1px] bg-gold-primary/30 my-2"></div>
                                 <span class="text-[7px] uppercase tracking-widest text-text-secondary/50 font-semibold select-none">PROTOTYPE MODULE</span>
@@ -623,12 +623,12 @@
 
                 <div class="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-6">
                     <div class="space-y-3">
-                        <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">Branding</span>
+                        <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">{{ __('site.home.projects.items.design_label') }}</span>
                         <h3 class="font-serif text-2xl font-light text-text-primary group-hover:text-gold-light transition-colors duration-300">
                             Design &amp; Branding
                         </h3>
                         <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                            Developing consistent logos, styling guidelines, and marketing templates for modern businesses.
+                            {{ __('site.home.projects.items.design_desc') }}
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -647,9 +647,9 @@
 <section id="store" class="bg-surface/30 bg-grid-ambient py-20 reveal-fade">
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 space-y-12">
         <div class="text-center max-w-xl mx-auto space-y-3">
-            <span class="section-label">RETAIL BRANCH</span>
-            <h2 class="font-serif text-3xl font-light text-text-primary uppercase tracking-wider">AA Store Premium</h2>
-            <p class="text-text-secondary text-xs md:text-sm">Providing professional digital assets, premium license slots, and AI utility configurations for creators.</p>
+            <span class="section-label">{{ __('site.home.ecosystem.branches.retail') }}</span>
+            <h2 class="font-serif text-3xl font-light text-text-primary uppercase tracking-wider">{{ __('site.home.ecosystem.branches.retail_title') }}</h2>
+            <p class="text-text-secondary text-xs md:text-sm">{{ __('site.home.ecosystem.branches.retail_desc') }}</p>
         </div>
 
         <div class="max-w-4xl mx-auto relative border border-border-gold p-1 bg-luxury-bg shadow-[0_0_80px_rgba(200,169,106,0.04)] reveal-scale" data-delay="150">
@@ -662,27 +662,27 @@
                 <div class="space-y-4 max-w-xl text-center md:text-left">
                     <span class="inline-flex items-center text-[9px] uppercase tracking-widest text-gold-primary font-bold bg-gold-primary/5 px-2.5 py-1 border border-border-gold/30">
                         <svg class="w-3 h-3 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.952 11.952 0 01-7.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                        Verified Reseller Status
+                        {{ __('site.home.showcase.badge') }}
                     </span>
                     <h3 class="font-serif text-2xl font-light text-text-primary leading-tight">
-                        Ecosystem Storefront &amp; Automated Support
+                        {{ __('site.home.showcase.title') }}
                     </h3>
                     <p class="font-sans text-xs md:text-sm text-text-secondary leading-relaxed">
-                        Kami menyediakan pengedaran rasmi lesen perisian komersial, akaun penstriman premium, reka bentuk UX, serta skrip bot tersuai dengan jaminan sokongan pasca-pembelian.
+                        {{ __('site.home.showcase.desc') }}
                     </p>
                 </div>
                 
                 <div class="flex flex-col gap-3 w-full md:w-64">
                     <a href="https://t.me/aastorepremium_bot" target="_blank" rel="noopener noreferrer" class="w-full">
                         <button class="btn-sweep-gold w-full inline-flex items-center justify-center px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-black bg-gold-primary hover:bg-gold-light transition-colors duration-300 min-h-[44px] cursor-pointer">
-                            Open Telegram Bot
+                            {{ __('site.buttons.open_telegram_bot') }}
                             <svg class="ml-2 w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
                         </button>
                     </a>
                     
                     <a href="https://wa.me/601118715341?text=Hi%20Amir%2C%20saya%20nak%20semak%20stok%20terkini%20AA%20Store%20Premium." target="_blank" rel="noopener noreferrer" class="w-full">
                         <button class="btn-sweep-gold w-full inline-flex items-center justify-center px-4 py-3 text-[10px] font-bold uppercase tracking-widest border border-border-gold/40 hover:border-gold-primary text-text-primary bg-transparent transition-colors duration-300 min-h-[44px] cursor-pointer">
-                            Check Stock Catalog
+                            {{ __('site.buttons.check_catalog') }}
                             <svg class="ml-2 w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                         </button>
                     </a>
@@ -698,9 +698,9 @@
 <section id="process" class="bg-grid-ambient bg-luxury-bg py-20 reveal-fade">
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 space-y-12">
         <div class="text-center max-w-xl mx-auto space-y-3">
-            <span class="section-label">METHODOLOGY</span>
-            <h2 class="font-serif text-3xl font-light text-text-primary uppercase tracking-wider">Work Process</h2>
-            <p class="text-text-secondary text-xs md:text-sm">A structured workflow designed to maintain high technical standards and ensure clear, predictable delivery.</p>
+            <span class="section-label">{{ __('site.home.process.label') }}</span>
+            <h2 class="font-serif text-3xl font-light text-text-primary uppercase tracking-wider">{{ __('site.home.process.title') }}</h2>
+            <p class="text-text-secondary text-xs md:text-sm">{{ __('site.home.process.subtitle') }}</p>
         </div>
 
         <div class="relative max-w-6xl mx-auto px-4">
@@ -715,9 +715,9 @@
                         <div class="hidden lg:block w-3.5 h-3.5 rounded-full border border-gold-primary bg-luxury-bg mt-3"></div>
                     </div>
                     <div class="p-6 bg-surface/80 flex flex-col justify-between min-h-[170px] w-full border border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card">
-                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">Discover</h3>
+                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">{{ __('site.home.process.steps.discover_title') }}</h3>
                         <p class="font-sans text-[11px] text-text-secondary leading-relaxed">
-                            Mengenal pasti keperluan perniagaan, menganalisis skop pasaran, dan menetapkan rangka tindakan utama.
+                            {{ __('site.home.process.steps.discover_desc') }}
                         </p>
                     </div>
                 </div>
@@ -728,9 +728,9 @@
                         <div class="hidden lg:block w-3.5 h-3.5 rounded-full border border-gold-primary bg-luxury-bg mt-3"></div>
                     </div>
                     <div class="p-6 bg-surface/80 flex flex-col justify-between min-h-[170px] w-full border border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card">
-                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">Design</h3>
+                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">{{ __('site.home.process.steps.design_title') }}</h3>
                         <p class="font-sans text-[11px] text-text-secondary leading-relaxed">
-                            Mereka bentuk antaramuka visual premium (Figma) berteraskan tipografi mewah dan grid teratur.
+                            {{ __('site.home.process.steps.design_desc') }}
                         </p>
                     </div>
                 </div>
@@ -741,9 +741,9 @@
                         <div class="hidden lg:block w-3.5 h-3.5 rounded-full border border-gold-primary bg-luxury-bg mt-3"></div>
                     </div>
                     <div class="p-6 bg-surface/80 flex flex-col justify-between min-h-[170px] w-full border border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card">
-                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">Build</h3>
+                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">{{ __('site.home.process.steps.build_title') }}</h3>
                         <p class="font-sans text-[11px] text-text-secondary leading-relaxed">
-                            Membangunkan kod modular responsif berprestasi tinggi menggunakan Laravel, Blade, dan Tailwind CSS.
+                            {{ __('site.home.process.steps.build_desc') }}
                         </p>
                     </div>
                 </div>
@@ -754,9 +754,9 @@
                         <div class="hidden lg:block w-3.5 h-3.5 rounded-full border border-gold-primary bg-luxury-bg mt-3"></div>
                     </div>
                     <div class="p-6 bg-surface/80 flex flex-col justify-between min-h-[170px] w-full border border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card">
-                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">Launch</h3>
+                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">{{ __('site.home.process.steps.launch_title') }}</h3>
                         <p class="font-sans text-[11px] text-text-secondary leading-relaxed">
-                            Melaksanakan audit kualiti akhir, integrasi server lokal, dan pelancaran sistem ke staging port portfolio.
+                            {{ __('site.home.process.steps.launch_desc') }}
                         </p>
                     </div>
                 </div>
@@ -767,9 +767,9 @@
                         <div class="hidden lg:block w-3.5 h-3.5 rounded-full border border-gold-primary bg-luxury-bg mt-3"></div>
                     </div>
                     <div class="p-6 bg-surface/80 flex flex-col justify-between min-h-[170px] w-full border border-surface-soft hover:border-gold-primary/30 transition-all duration-500 luxury-card">
-                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">Improve</h3>
+                        <h3 class="font-serif text-base text-text-primary font-medium mb-2">{{ __('site.home.process.steps.improve_title') }}</h3>
                         <p class="font-sans text-[11px] text-text-secondary leading-relaxed">
-                            Memantau kelancaran trafik, mengoptimumkan automasi bot, dan melaraskan sistem mengikut data pengguna.
+                            {{ __('site.home.process.steps.improve_desc') }}
                         </p>
                     </div>
                 </div>
@@ -785,8 +785,8 @@
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 space-y-12">
         <div class="text-center max-w-xl mx-auto space-y-3">
             <span class="section-label">HORIZON</span>
-            <h2 class="font-serif text-3xl font-light text-text-primary uppercase tracking-wider">Vision Timeline</h2>
-            <p class="text-text-secondary text-xs md:text-sm">The strategic roadmap detailing the development and expansion plans for AA Group over the coming years.</p>
+            <h2 class="font-serif text-3xl font-light text-text-primary uppercase tracking-wider">{{ __('site.about_page.roadmap.title') }}</h2>
+            <p class="text-text-secondary text-xs md:text-sm">{{ __('site.about_page.roadmap.desc') }}</p>
         </div>
 
         <div class="relative max-w-5xl mx-auto px-6">
@@ -800,9 +800,9 @@
                         <div class="hidden lg:block w-3.5 h-3.5 rounded-full border border-blue-accent bg-luxury-bg mt-3 select-none"></div>
                     </div>
                     <div class="p-6 bg-surface/80 w-full flex-grow flex flex-col space-y-2 border border-surface-soft hover:border-blue-accent/30 hover:shadow-[0_0_20px_rgba(47,128,237,0.04)] transition-all duration-500 luxury-card">
-                        <h4 class="font-serif text-base text-text-primary font-medium">Build AA Store Premium</h4>
+                        <h4 class="font-serif text-base text-text-primary font-medium">{{ __('site.about_page.roadmap.items.2026_title') }}</h4>
                         <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                            Establishing primary cash-flow channels and automated Telegram bot systems to distribute licenses and premium keys.
+                            {{ __('site.about_page.roadmap.items.2026_desc') }}
                         </p>
                     </div>
                 </div>
@@ -813,9 +813,9 @@
                         <div class="hidden lg:block w-3.5 h-3.5 rounded-full border border-blue-accent bg-luxury-bg mt-3 select-none"></div>
                     </div>
                     <div class="p-6 bg-surface/80 w-full flex-grow flex flex-col space-y-2 border border-surface-soft hover:border-blue-accent/30 hover:shadow-[0_0_20px_rgba(47,128,237,0.04)] transition-all duration-500 luxury-card">
-                        <h4 class="font-serif text-base text-text-primary font-medium">Expand Digital Services</h4>
+                        <h4 class="font-serif text-base text-text-primary font-medium">{{ __('site.about_page.roadmap.items.2027_title') }}</h4>
                         <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                            Introducing custom Next.js/Laravel frontend development and specialized automation services for select business clients.
+                            {{ __('site.about_page.roadmap.items.2027_desc') }}
                         </p>
                     </div>
                 </div>
@@ -826,9 +826,9 @@
                         <div class="hidden lg:block w-3.5 h-3.5 rounded-full border border-blue-accent bg-luxury-bg mt-3 select-none"></div>
                     </div>
                     <div class="p-6 bg-surface/80 w-full flex-grow flex flex-col space-y-2 border border-surface-soft hover:border-blue-accent/30 hover:shadow-[0_0_20px_rgba(47,128,237,0.04)] transition-all duration-500 luxury-card">
-                        <h4 class="font-serif text-base text-text-primary font-medium">Build High-Performance Team</h4>
+                        <h4 class="font-serif text-base text-text-primary font-medium">{{ __('site.about_page.roadmap.items.2028_title') }}</h4>
                         <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                            Recruiting highly skilled designers and system developers to handle larger client scales and speed up pipeline production.
+                            {{ __('site.about_page.roadmap.items.2028_desc') }}
                         </p>
                     </div>
                 </div>
@@ -839,9 +839,9 @@
                         <div class="hidden lg:block w-3.5 h-3.5 rounded-full border border-blue-accent bg-luxury-bg mt-3 select-none"></div>
                     </div>
                     <div class="p-6 bg-surface/80 w-full flex-grow flex flex-col space-y-2 border border-surface-soft hover:border-blue-accent/30 hover:shadow-[0_0_20px_rgba(47,128,237,0.04)] transition-all duration-500 luxury-card">
-                        <h4 class="font-serif text-base text-text-primary font-medium">Scale AA Group Ecosystem</h4>
+                        <h4 class="font-serif text-base text-text-primary font-medium">{{ __('site.about_page.roadmap.items.2029_title') }}</h4>
                         <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                            Integrating all products, custom bot scripts, and services into a complete digital ecosystem catering to global operations.
+                            {{ __('site.about_page.roadmap.items.2029_desc') }}
                         </p>
                     </div>
                 </div>
@@ -863,17 +863,17 @@
 
         <div class="relative border border-border-gold/30 bg-surface/50 w-full h-full p-8 md:p-12">
             <div class="relative z-10 max-w-xl mx-auto space-y-6">
-                <span class="section-label">Launch Your Project</span>
-                <h3 class="text-2xl md:text-3xl font-black text-white tracking-tight uppercase font-serif">Let's Collaborate on Premium Solutions</h3>
+                <span class="section-label">{{ __('site.home.cta.label') }}</span>
+                <h3 class="text-2xl md:text-3xl font-black text-white tracking-tight uppercase font-serif">{{ __('site.home.cta.title') }}</h3>
                 <p class="text-text-secondary text-xs leading-relaxed">
-                    Whether you need a bespoke business site, automated bot scripting, or a customized design template, I can help you architect it.
+                    {{ __('site.home.cta.desc') }}
                 </p>
                 <div class="pt-4 flex flex-wrap gap-4 justify-center">
                     <a href="https://wa.me/601118715341?text=Hi%20Amir%2C%20saya%20berminat%20dengan%20servis%20AA%20Group." target="_blank" rel="noopener noreferrer" class="btn-sweep-gold inline-flex items-center gap-2 px-5 py-3.5 text-[10px] font-bold uppercase tracking-widest text-black bg-gold-primary hover:bg-gold-light transition-all duration-300">
-                        <span>Contact via WhatsApp</span>
+                        <span>{{ __('site.buttons.contact_whatsapp') }}</span>
                     </a>
                     <a href="{{ url('/contact') }}" class="btn-sweep-gold inline-flex items-center gap-2 px-5 py-3.5 text-[10px] font-bold uppercase tracking-widest text-slate-200 bg-transparent border border-white/10 hover:border-gold-primary/30 hover:bg-gold-primary/5 transition-all duration-300">
-                        <span>Email Amir</span>
+                        <span>{{ __('site.buttons.email_amir') }}</span>
                     </a>
                 </div>
             </div>

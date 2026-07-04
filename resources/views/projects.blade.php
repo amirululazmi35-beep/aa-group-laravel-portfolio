@@ -1,16 +1,16 @@
 @extends('layouts.portfolio')
 
-@section('title', 'Projects Portfolio')
+@section('title', __('site.nav.projects'))
 
 @section('content')
 <section class="max-w-6xl mx-auto px-6 py-28 space-y-12 reveal-fade">
     <!-- Header Block -->
     <div class="text-center max-w-xl mx-auto space-y-3">
         <span class="section-label font-bold">
-            Selected Works
+            {{ __('site.projects_page.label') }}
         </span>
-        <h1 class="font-serif text-4xl sm:text-5xl font-light text-text-primary uppercase tracking-widest leading-tight">Selected Projects</h1>
-        <p class="text-text-secondary text-xs md:text-sm font-sans leading-relaxed">A preview of platforms, software automation, and visual design assets engineered under the AA Group ecosystem.</p>
+        <h1 class="font-serif text-4xl sm:text-5xl font-light text-text-primary uppercase tracking-widest leading-tight">{{ __('site.projects_page.title') }}</h1>
+        <p class="text-text-secondary text-xs md:text-sm font-sans leading-relaxed">{{ __('site.projects_page.desc') }}</p>
     </div>
 
     <!-- Projects Grid -->
@@ -34,7 +34,7 @@
                             AA
                         </span>
                         <div class="border border-border-gold w-full h-full flex flex-col items-center justify-center p-4 relative z-10">
-                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">E-Commerce Product</span>
+                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">{{ __('site.home.projects.items.store_label') }}</span>
                             <span class="font-serif text-sm tracking-wider text-text-primary uppercase max-w-[200px] leading-tight mb-2">AA Store Premium</span>
                             <div class="w-6 h-[1px] bg-gold-primary/30 my-2"></div>
                             <span class="text-[7px] uppercase tracking-widest text-text-secondary/50 font-semibold select-none">PROTOTYPE MODULE</span>
@@ -49,12 +49,12 @@
 
             <div class="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-6">
                 <div class="space-y-3">
-                    <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">Digital Platform</span>
+                    <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">{{ __('site.home.projects.items.store_label') }}</span>
                     <h3 class="font-serif text-2xl font-light text-text-primary group-hover:text-gold-light transition-colors duration-300">
                         AA Store Premium
                     </h3>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                        A digital product business selling premium pre-configured web layouts, AI automation packages, and developer utility tools.
+                        {{ __('site.home.projects.items.store_desc') }}
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -84,7 +84,7 @@
                             GP
                         </span>
                         <div class="border border-border-gold w-full h-full flex flex-col items-center justify-center p-4 relative z-10">
-                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">Core Hub</span>
+                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">{{ __('site.home.projects.items.portfolio_label') }}</span>
                             <span class="font-serif text-sm tracking-wider text-text-primary uppercase max-w-[200px] leading-tight mb-2">AA Group Portfolio Website</span>
                             <div class="w-6 h-[1px] bg-gold-primary/30 my-2"></div>
                             <span class="text-[7px] uppercase tracking-widest text-text-secondary/50 font-semibold select-none">PROTOTYPE MODULE</span>
@@ -99,12 +99,12 @@
 
             <div class="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-6">
                 <div class="space-y-3">
-                    <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">Portfolio Site</span>
+                    <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">{{ __('site.home.projects.items.portfolio_label') }}</span>
                     <h3 class="font-serif text-2xl font-light text-text-primary group-hover:text-gold-light transition-colors duration-300">
                         AA Group Portfolio Website
                     </h3>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                        This digital portfolio showcasing founder credentials, brand direction, coding and design services.
+                        {{ __('site.home.projects.items.portfolio_desc') }}
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -134,7 +134,7 @@
                             BM
                         </span>
                         <div class="border border-border-blue w-full h-full flex flex-col items-center justify-center p-4 relative z-10">
-                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-blue-accent">Automation systems</span>
+                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-blue-accent">{{ __('site.home.projects.items.bot_label') }}</span>
                             <span class="font-serif text-sm tracking-wider text-text-primary uppercase max-w-[200px] leading-tight mb-2">BLACKMARKET Telegram Bot</span>
                             <div class="w-6 h-[1px] bg-blue-accent/30 my-2"></div>
                             <span class="text-[7px] uppercase tracking-widest text-text-secondary/50 font-semibold select-none">PROTOTYPE MODULE</span>
@@ -149,12 +149,12 @@
 
             <div class="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-6">
                 <div class="space-y-3">
-                    <span class="text-[9px] uppercase tracking-widest font-bold text-blue-accent">Telegram Automation</span>
+                    <span class="text-[9px] uppercase tracking-widest font-bold text-blue-accent">{{ __('site.home.projects.items.bot_label') }}</span>
                     <h3 class="font-serif text-2xl font-light text-text-primary group-hover:text-gold-light transition-colors duration-300">
                         BLACKMARKET Bot
                     </h3>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                        An automated distributor bot designed for Telegram, handling digital products, invoice notifications, and instant payment validation.
+                        {{ __('site.home.projects.items.bot_desc') }}
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -184,7 +184,7 @@
                             DB
                         </span>
                         <div class="border border-border-gold w-full h-full flex flex-col items-center justify-center p-4 relative z-10">
-                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">Creative Design</span>
+                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-gold-primary">{{ __('site.home.projects.items.design_label') }}</span>
                             <span class="font-serif text-sm tracking-wider text-text-primary uppercase max-w-[200px] leading-tight mb-2">Design &amp; Branding</span>
                             <div class="w-6 h-[1px] bg-gold-primary/30 my-2"></div>
                             <span class="text-[7px] uppercase tracking-widest text-text-secondary/50 font-semibold select-none">PROTOTYPE MODULE</span>
@@ -199,12 +199,12 @@
 
             <div class="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-6">
                 <div class="space-y-3">
-                    <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">Branding</span>
+                    <span class="text-[9px] uppercase tracking-widest font-bold text-gold-primary">{{ __('site.home.projects.items.design_label') }}</span>
                     <h3 class="font-serif text-2xl font-light text-text-primary group-hover:text-gold-light transition-colors duration-300">
                         Design &amp; Branding Work
                     </h3>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                        Complete identity systems, customized vector typography, color patterns, and print-ready stationery design layouts.
+                        {{ __('site.home.projects.items.design_desc') }}
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">
@@ -234,7 +234,7 @@
                             AI
                         </span>
                         <div class="border border-border-blue w-full h-full flex flex-col items-center justify-center p-4 relative z-10">
-                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-blue-accent">Cognitive automation</span>
+                            <span class="text-[8px] uppercase tracking-[0.25em] font-bold mb-1.5 text-blue-accent">{{ __('site.home.projects.items.ai_label') }}</span>
                             <span class="font-serif text-sm tracking-wider text-text-primary uppercase max-w-[200px] leading-tight mb-2">AI Solutions Experiments</span>
                             <div class="w-6 h-[1px] bg-blue-accent/30 my-2"></div>
                             <span class="text-[7px] uppercase tracking-widest text-text-secondary/50 font-semibold select-none">PROTOTYPE MODULE</span>
@@ -249,12 +249,12 @@
 
             <div class="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-6">
                 <div class="space-y-3">
-                    <span class="text-[9px] uppercase tracking-widest font-bold text-blue-accent">AI Experiment</span>
+                    <span class="text-[9px] uppercase tracking-widest font-bold text-blue-accent">{{ __('site.home.projects.items.ai_label') }}</span>
                     <h3 class="font-serif text-2xl font-light text-text-primary group-hover:text-gold-light transition-colors duration-300">
                         AI Solutions Experiments
                     </h3>
                     <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal">
-                        Integrating prompt engineering engines with dynamic databases, creating structured content models, and backend script testing.
+                        {{ __('site.home.projects.items.ai_desc') }}
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-1.5 pt-4 border-t border-surface-soft/40">

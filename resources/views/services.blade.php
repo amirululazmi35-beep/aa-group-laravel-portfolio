@@ -1,16 +1,16 @@
 @extends('layouts.portfolio')
 
-@section('title', 'Our Services')
+@section('title', __('site.nav.services'))
 
 @section('content')
 <section class="max-w-6xl mx-auto px-6 py-28 space-y-12 reveal-fade">
     <!-- Header Block -->
     <div class="text-center max-w-xl mx-auto space-y-3">
         <span class="section-label font-bold">
-            What We Do
+            {{ __('site.services_page.label') }}
         </span>
-        <h1 class="font-serif text-4xl sm:text-5xl font-light text-text-primary uppercase tracking-widest leading-tight">Professional Services</h1>
-        <p class="text-text-secondary text-xs md:text-sm font-sans leading-relaxed">We architect modern software, automate operational bottlenecks, and design corporate identities.</p>
+        <h1 class="font-serif text-4xl sm:text-5xl font-light text-text-primary uppercase tracking-widest leading-tight">{{ __('site.services_page.title') }}</h1>
+        <p class="text-text-secondary text-xs md:text-sm font-sans leading-relaxed">{{ __('site.services_page.desc') }}</p>
     </div>
 
     <!-- Services Grid -->
@@ -18,7 +18,7 @@
         <!-- Service 1 (Featured) -->
         <div class="p-8 flex flex-col justify-between min-h-[340px] bg-surface/80 group border relative luxury-card border-gold-primary shadow-[0_0_30px_rgba(200,169,106,0.04)] luxury-card-hover reveal-blur" data-delay="100">
             <span class="absolute top-4 right-4 text-[8px] uppercase tracking-widest bg-gold-primary text-black px-2 py-0.5 font-bold font-sans luxury-shine">
-                Featured Service
+                {{ __('site.services_page.featured') }}
             </span>
             <div>
                 <!-- Icon -->
@@ -27,11 +27,11 @@
                 </div>
                 <!-- Title -->
                 <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300 uppercase">
-                    Website Development
+                    {{ __('site.services_page.items.web.title') }}
                 </h3>
                 <!-- Description -->
                 <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal mb-6">
-                    Custom responsive business sites, static pages, and robust backend structures using Laravel, Blade, Tailwind CSS, and Vite.
+                    {{ __('site.services_page.items.web.desc') }}
                 </p>
             </div>
             <div class="space-y-4">
@@ -41,7 +41,7 @@
                     <span class="tag-pill border border-surface-soft text-text-secondary/70 text-[8px] py-0.5 px-1.5">SEO Opt</span>
                 </div>
                 <a href="https://wa.me/601118715341?text=Hi%20Amir%2C%20saya%20berminat%20dengan%20servis%20website%20development%20AA%20Group." target="_blank" rel="noopener noreferrer" class="btn-sweep-gold inline-flex items-center justify-center px-4 py-2 text-[9px] uppercase tracking-widest text-gold-primary hover:text-gold-light font-bold transition-colors duration-300 w-full cursor-pointer mt-2 min-h-[38px] border border-border-gold/30">
-                    Book Consultation
+                    {{ __('site.buttons.book_consultation') }}
                 </a>
             </div>
         </div>
@@ -55,11 +55,11 @@
                 </div>
                 <!-- Title -->
                 <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300 uppercase">
-                    UI/UX Design
+                    {{ __('site.services_page.items.uiux.title') }}
                 </h3>
                 <!-- Description -->
                 <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal mb-6">
-                    High-end layouts, structured style systems, responsive mockups, and client-approved Figma workspace flows.
+                    {{ __('site.services_page.items.uiux.desc') }}
                 </p>
             </div>
             <div class="space-y-4">
@@ -69,7 +69,7 @@
                     <span class="tag-pill border border-surface-soft text-text-secondary/70 text-[8px] py-0.5 px-1.5">Layouts</span>
                 </div>
                 <a href="https://wa.me/601118715341?text=Hi%20Amir%2C%20saya%20berminat%20dengan%20servis%20design%20%26%20branding%20AA%20Group." target="_blank" rel="noopener noreferrer" class="btn-sweep-gold inline-flex items-center justify-center px-4 py-2 text-[9px] uppercase tracking-widest text-gold-primary hover:text-gold-light font-bold transition-colors duration-300 w-full cursor-pointer mt-2 min-h-[38px] border border-border-gold/30">
-                    Book Consultation
+                    {{ __('site.buttons.book_consultation') }}
                 </a>
             </div>
         </div>
@@ -83,11 +83,11 @@
                 </div>
                 <!-- Title -->
                 <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300 uppercase">
-                    Graphic Design
+                    {{ __('site.services_page.items.graphic.title') }}
                 </h3>
                 <!-- Description -->
                 <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal mb-6">
-                    Unique logo engineering, high-fidelity marketing banners, customized vector shapes, and corporate documentation layouts.
+                    {{ __('site.services_page.items.graphic.desc') }}
                 </p>
             </div>
             <div class="space-y-4">
@@ -97,7 +97,7 @@
                     <span class="tag-pill border border-surface-soft text-text-secondary/70 text-[8px] py-0.5 px-1.5">Banners</span>
                 </div>
                 <a href="https://wa.me/601118715341?text=Hi%20Amir%2C%20saya%20berminat%20dengan%20servis%20design%20%26%20branding%20AA%20Group." target="_blank" rel="noopener noreferrer" class="btn-sweep-gold inline-flex items-center justify-center px-4 py-2 text-[9px] uppercase tracking-widest text-gold-primary hover:text-gold-light font-bold transition-colors duration-300 w-full cursor-pointer mt-2 min-h-[38px] border border-border-gold/30">
-                    Book Consultation
+                    {{ __('site.buttons.book_consultation') }}
                 </a>
             </div>
         </div>
@@ -105,7 +105,7 @@
         <!-- Service 4 (Featured) -->
         <div class="p-8 flex flex-col justify-between min-h-[340px] bg-surface/80 group border relative luxury-card border-gold-primary shadow-[0_0_30px_rgba(200,169,106,0.04)] luxury-card-blue reveal-blur" data-delay="400">
             <span class="absolute top-4 right-4 text-[8px] uppercase tracking-widest bg-gold-primary text-black px-2 py-0.5 font-bold font-sans luxury-shine">
-                Featured Service
+                {{ __('site.services_page.featured') }}
             </span>
             <div>
                 <!-- Icon -->
@@ -114,11 +114,11 @@
                 </div>
                 <!-- Title -->
                 <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300 uppercase">
-                    AI Setup &amp; Automation
+                    {!! __('site.services_page.items.ai.title') !!}
                 </h3>
                 <!-- Description -->
                 <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal mb-6">
-                    Custom LLM prompt wrappers, automated response generation setups, chatbot scripting, and database API integrations.
+                    {{ __('site.services_page.items.ai.desc') }}
                 </p>
             </div>
             <div class="space-y-4">
@@ -128,7 +128,7 @@
                     <span class="tag-pill border border-surface-soft text-text-secondary/70 text-[8px] py-0.5 px-1.5">Integrations</span>
                 </div>
                 <a href="https://wa.me/601118715341?text=Hi%20Amir%2C%20saya%20berminat%20dengan%20servis%20AI%20solutions%20AA%20Group." target="_blank" rel="noopener noreferrer" class="btn-sweep-gold inline-flex items-center justify-center px-4 py-2 text-[9px] uppercase tracking-widest text-gold-primary hover:text-gold-light font-bold transition-colors duration-300 w-full cursor-pointer mt-2 min-h-[38px] border border-border-gold/30">
-                    Book Consultation
+                    {{ __('site.buttons.book_consultation') }}
                 </a>
             </div>
         </div>
@@ -136,7 +136,7 @@
         <!-- Service 5 (Featured) -->
         <div class="p-8 flex flex-col justify-between min-h-[340px] bg-surface/80 group border relative luxury-card border-gold-primary shadow-[0_0_30px_rgba(200,169,106,0.04)] luxury-card-blue reveal-blur" data-delay="500">
             <span class="absolute top-4 right-4 text-[8px] uppercase tracking-widest bg-gold-primary text-black px-2 py-0.5 font-bold font-sans luxury-shine">
-                Featured Service
+                {{ __('site.services_page.featured') }}
             </span>
             <div>
                 <!-- Icon -->
@@ -145,11 +145,11 @@
                 </div>
                 <!-- Title -->
                 <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300 uppercase">
-                    Telegram Bot / Sales System
+                    {!! __('site.services_page.items.bot.title') !!}
                 </h3>
                 <!-- Description -->
                 <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal mb-6">
-                    Telegram sales bots, automated response triggers, script distribution modules, and custom database scheduling tasks.
+                    {{ __('site.services_page.items.bot.desc') }}
                 </p>
             </div>
             <div class="space-y-4">
@@ -159,7 +159,7 @@
                     <span class="tag-pill border border-surface-soft text-text-secondary/70 text-[8px] py-0.5 px-1.5">Webhooks</span>
                 </div>
                 <a href="https://wa.me/601118715341?text=Hi%20Amir%2C%20saya%20berminat%20dengan%20servis%20AI%20solutions%20AA%20Group." target="_blank" rel="noopener noreferrer" class="btn-sweep-gold inline-flex items-center justify-center px-4 py-2 text-[9px] uppercase tracking-widest text-gold-primary hover:text-gold-light font-bold transition-colors duration-300 w-full cursor-pointer mt-2 min-h-[38px] border border-border-gold/30">
-                    Book Consultation
+                    {{ __('site.buttons.book_consultation') }}
                 </a>
             </div>
         </div>
@@ -173,11 +173,11 @@
                 </div>
                 <!-- Title -->
                 <h3 class="font-serif text-2xl font-light text-text-primary mb-3 group-hover:text-gold-light transition-colors duration-300 uppercase">
-                    Digital Product Strategy
+                    {{ __('site.services_page.items.strategy.title') }}
                 </h3>
                 <!-- Description -->
                 <p class="font-sans text-xs text-text-secondary leading-relaxed font-normal mb-6">
-                    Architecture plans for SaaS and theme stores, checkout integrations, pricing model advice, and script licensing systems.
+                    {{ __('site.services_page.items.strategy.desc') }}
                 </p>
             </div>
             <div class="space-y-4">
@@ -187,7 +187,7 @@
                     <span class="tag-pill border border-surface-soft text-text-secondary/70 text-[8px] py-0.5 px-1.5">Licensing</span>
                 </div>
                 <a href="https://wa.me/601118715341?text=Hi%20Amir%2C%20saya%20berminat%20dengan%20servis%20AA%20Group." target="_blank" rel="noopener noreferrer" class="btn-sweep-gold inline-flex items-center justify-center px-4 py-2 text-[9px] uppercase tracking-widest text-gold-primary hover:text-gold-light font-bold transition-colors duration-300 w-full cursor-pointer mt-2 min-h-[38px] border border-border-gold/30">
-                    Book Consultation
+                    {{ __('site.buttons.book_consultation') }}
                 </a>
             </div>
         </div>

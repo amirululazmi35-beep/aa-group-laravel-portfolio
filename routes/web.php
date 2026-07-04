@@ -21,3 +21,11 @@ Route::get('/projects', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/lang/{locale}', function (string $locale) {
+    if (! in_array($locale, ['ms', 'en'])) {
+        abort(400);
+    }
+    session(['locale' => $locale]);
+    return back();
+})->name('lang.switch');
