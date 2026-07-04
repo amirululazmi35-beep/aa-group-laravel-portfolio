@@ -19,6 +19,12 @@
 </head>
 <body class="h-full font-sans antialiased bg-luxury-bg text-text-primary flex flex-col selection:bg-gold-primary selection:text-black">
 
+    <!-- AA Group Premium Geometric Background System -->
+    <div class="aa-geometric-bg" aria-hidden="true"></div>
+    <div class="aa-emboss-pattern" aria-hidden="true"></div>
+    <div class="aa-geometric-vignette" aria-hidden="true"></div>
+    <div class="aa-geometric-noise" aria-hidden="true"></div>
+
     <!-- Thin Scroll Progress Bar -->
     <div id="scroll-progress"></div>
 
